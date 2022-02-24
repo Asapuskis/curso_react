@@ -20,8 +20,12 @@ Se explican los conceptos básicos y tips de react. Se crea el primer componente
 
 Primer proyecto con una funcionalidad más compleja. Una app que cuenta el número de clicks en un botón. Se introducen también los eventos y el primer Hook, __useState__.
 
-### 05-unit-tests
+### 05-unit-tests-js
 
 Iniciación a tests unitarios y de integración utilizando las funciones creadas en la intro de javascript. Mirar el demo.test.js para la información básica sobre el testeo de funciones y componentes.
 
 También se hacen tests sobre componentes react en el propio proyecto 04-counter-app.
+
+### 06-unit-tests-react
+
+Iniciación sobre test unitarios en react. Tests de componentes y simulación de eventos para poder testear el correcto funcionamiento de los mismos.
