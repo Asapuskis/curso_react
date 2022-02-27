@@ -4,6 +4,7 @@
 
 body {
   padding: 60px;
+  background-color: rgb(104, 190, 240);
 }
 
 input {
@@ -30,8 +31,10 @@ input {
 .card p {
   padding: 5px;
   text-align: center;
+  color: rgb(126, 16, 16);
 }
 
 .card img {
   max-height: 170px;
+  align-content: center;
 }

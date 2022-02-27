@@ -38,3 +38,4 @@
 * __Estructuración de ficheros en un proyecto__: hooks, components, helpers.
 * Creación de un __custom Hook__ que utiliza los hooks __useState__ y __useEffect__ para simplificar el código.
 * También se añaden __animaciones__ para hacer más dinámica la app. La web de animaciones es <https://animate.style/>
+* Se genera la versión __build__ para producción. *npm run build* en la carpeta del proyecto. Todo proyecto de react tiene que correr en un server, para probarlo, se ha instalado __http-server__ <https://www.npmjs.com/package/http-server>. Una vez instalado, ir a la carpeta *build* y correr *http-server -o*.
