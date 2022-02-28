@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
   // Utilizaremos el hook useState para poder modificar los valores del array de categorías.
-  const [categories, setCategories] = useState(['Shingeki']);
+  const [categories, setCategories] = useState(defaultCategories);
 
   // Función para añadir nuevos elementos al array
   // const handleAdd = () => {

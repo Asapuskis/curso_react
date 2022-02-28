@@ -13,13 +13,13 @@ export const useFetchGifs = ( category ) => {
     useEffect( () => {
             getGifs(category)
                 .then( imgs => {
-                    // Por defecto, esperaremos 3 segundos para poder simular la carga de archivos.
+                    // Por defecto, esperaremos 500 milis para poder simular la carga de archivos.
                     setTimeout( () => {
                         setState({
                             data: imgs,
                             loading: false
                         });
-                    }, 3000);
+                    }, 500);
                 });
         },
         [category]

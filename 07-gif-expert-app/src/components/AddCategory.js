@@ -8,14 +8,16 @@ export const AddCategory = ( {setCategories} ) => {
 
     // Manejar los cambios de la caja de texto mediante useState.
     const handleInputChange = (e) => {
-        console.log(e.target.value);
-        setInputValue(e.target.value);
+        setInputValue(e.target);
+        console.log('handleInputChange llamado');
     }
 
     // Manejar el submit del formulario.
     const handleSubmit = (e) => {
         // Mediante preventDefault, evitamos que se refresque toda la página y perder los estados.
         e.preventDefault();
+
+        console.log('handleSubmit', inputValue);
 
         if (inputValue.trim().length > 2) {
             setCategories( cats => [ inputValue, ...cats,]);
@@ -28,6 +30,7 @@ export const AddCategory = ( {setCategories} ) => {
     return (
         <form onSubmit={handleSubmit}>
             <h2>AddCategory</h2>
+            <p>{inputValue}</p>
             <input
                 type='text'
                 value={inputValue}
