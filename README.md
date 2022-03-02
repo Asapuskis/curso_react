@@ -40,3 +40,14 @@
 * También se añaden __animaciones__ para hacer más dinámica la app. La web de animaciones es <https://animate.style/>
 * Se genera la versión __build__ para producción. *npm run build* en la carpeta del proyecto. Todo proyecto de react tiene que correr en un server, para probarlo, se ha instalado __http-server__ <https://www.npmjs.com/package/http-server>. Una vez instalado, ir a la carpeta *build* y correr *http-server -o*.
 * Se añaden tests unitarios de los componentes utilizados en Gif Expert App. Ojito a los comentarios en los tests donde se explica cada cosa...
+
+### 08-hooks-app
+
+* Se generan custom hooks para afianzar los conocimientos de __useState__ y __useEffect__ entre otros.
+* En 01-useState, se crea el hook __useCounter__ como ejemplo de un hook para almacenar estados.
+* En 02-useEffect, se crea el hook __useForm__ como ejemplo para manejar formularios.
+* En 03-examples, se crea el hook __useFetch__ que se utilizará para hacer peticiones http. Se utiliza el componente MultipleCustomHooks para testearlo.
+* En 04-useRef, se introduce el hook __useRef__ que sirve para coger la referencia de los elementos del DOM y modificarlos. Se utiliza el foco para testearlo.
+* En 05-useLayoutEffect, se introduce el hook __useLayoutEffect__ que sirve para coger la referencia de elementos cuando cambia un elemento del DOM. Funciona muy parecido al __useEffect__.
+* En 06-memos, se introduce el hook __useMemo__ que sirve para evitar renderizar/ejecutar partes de componentes que no están cambiando. De esta manera, evitamos sobrecargar la aplicación con llamadas innecesarias. También se menciona __useCallback__ que es muy parecido a __useMemo__. useCallback(fn, deps) es igual a useMemo(() => fn, deps).
+* En 07-tarea-memo es una repetición de lo anterior (__useCallback__ y __memo__) en forma de tarea.
