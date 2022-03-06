@@ -36,7 +36,6 @@ export const TodoApp = () => {
 
     // Función para manejar el borrado de tareas de la lista.
     const handleDelete = ( todoId ) => {
-        console.log(todoId);
         const deleteTodo = {
             id: todoId
         };

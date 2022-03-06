@@ -53,3 +53,4 @@
 * En 07-tarea-memo es una repetición de lo anterior (__useCallback__ y __memo__) en forma de tarea.
 * En 08-useReducer se explica el hook __useReducer__. Este hook se utiliza para almacenar los estados de la aplicación, es parecido a __useState__ pero utiliza una sintaxis estándar que está muy bien. También se menciona el __localStorage__ una manera de almacenar datos en el navegador de manera persistente. Se crea una app todo list, que toca muchos de los hooks y está muy bien para utilizar formularios, estados, etc.
 * En 09-useContext se utiliza el hook __useContext__. Este hook sirve para almacenar datos globales que se van a utilizar a lo largo de toda la app. Además, se introduce el concepto de __router__ que sirve para navegar entre pantallas y componentes en la app.
+* Test unitarios de 08-hooks-app.

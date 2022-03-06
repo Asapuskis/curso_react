@@ -6,11 +6,8 @@ import './customHooks.css';
 export const MultipleCustomHooks = () => {
 
     const { state:counter, increment } = useCounter(1)
-    console.log(counter)
 
     const { data, loading, error } = useFetch( `https://breakingbadapi.com/api/quotes/${counter}` );
-
-    console.log(data);
 
     // !! doble negación, o sea, si no es null
     // !null == true
