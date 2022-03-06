@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 // Este custom hook sirve para manejar el estado de un contador.
 // Recuerda que por defecto, un hook empieza por use
-export const useCounter = ( initialState = 10 ) => {
+export const useCounter = ( initialState = 0 ) => {
 
     const [state, setState] = useState(initialState)
 
