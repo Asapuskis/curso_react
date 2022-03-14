@@ -59,3 +59,10 @@
 
 * Carpeta para almacenar código reutilizable en otros proyectos.
 * Carpeta hooks con los custom hooks __useCounter__, __useFetch__ y __useForm__.
+
+### 09-heroes-app
+
+* Web funcional sobre información de superhéroes.
+* Se utilizan rutas y navegación entre páginas con __react-router-dom__.
+* Utilización real de hooks __useMemo__ y __useNavigate__.
+* Estilos con __bootstrap__ y animaciones con __animate.css__.
