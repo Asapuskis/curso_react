@@ -66,3 +66,5 @@
 * Se utilizan rutas y navegación entre páginas con __react-router-dom__.
 * Utilización real de hooks __useMemo__ y __useNavigate__.
 * Estilos con __bootstrap__ y animaciones con __animate.css__.
+* __Context__ y __reducer__ para almacenar los estados durante la ejecución de la app.
+* __Login__ del usuario y __rutas públicas y privadas__ dependiendo de si está logeado o no.

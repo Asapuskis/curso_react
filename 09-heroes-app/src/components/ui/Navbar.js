@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../auth/authContext';
+import { types } from '../../types/types';
 
 
 export const Navbar = () => {
 
+    const { user, dispatch } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleLogout = () => {
+
+        const action = {
+            type: types.logout
+          }
+        dispatch(action);
+
         console.log('handleLogout!');
         // La función navigate cambia la localización a la ruta indicada.
         // Si se quiere, se puede enviar el parámetro replace, que si está a true, elimina el historial de navegación dentro de la web
@@ -66,7 +75,7 @@ export const Navbar = () => {
 
                     <span
                         className='nav-item nav-link text-info'>
-                        Paco Suarez
+                        { user.name }
                     </span>
 
                     <button
