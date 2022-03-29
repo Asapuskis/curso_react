@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImages';
 
 export const HeroCard = ( { hero } ) => {
 
-    const imagePath = `/assets/${hero.id}.jpg`;
+    // Para utilizar un directorio con recursos, en este caso, imágenes, utilizaremos el módulo require.context('pathDelDirectorio', true)
+    // Ver heroImages.js para más información.
+    const imagePath = heroImages(`./${hero.id}.jpg`);
 
     return (
         <div className='col'>

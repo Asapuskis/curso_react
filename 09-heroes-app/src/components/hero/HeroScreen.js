@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { heroImages } from '../../helpers/heroImages';
 import { getHeroById } from '../../selectors/getHeroById';
 
 export const HeroScreen = () => {
@@ -26,7 +27,9 @@ export const HeroScreen = () => {
     return <Navigate to='/' />
   }
 
-  const imagePath = `/assets/${hero.id}.jpg`;
+  // Para utilizar un directorio con recursos, en este caso, imágenes, utilizaremos el módulo require.context('pathDelDirectorio', true).
+  // Ver heroImages.js para más información.
+  const imagePath = heroImages(`./${hero.id}.jpg`);
 
   return (
     <div className='row mt-5'>
